@@ -1,0 +1,3 @@
+# Org-wide default: puts the Sponsor button on every Novavero-AI
+# repository. A repo-local .github/FUNDING.yml overrides this.
+github: [aoinoikaz]
