@@ -1,0 +1,24 @@
+name: Feature request
+description: Something that is missing, including upstream Nix behavior nova-nix does not support yet.
+type: Feature
+projects: ["Novavero-AI/1"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What you are trying to do, and what stops you today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: What should happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: upstream
+    attributes:
+      label: Upstream behavior
+      description: If upstream Nix already does this, the version and how it behaves, with a link to its source or documentation if you have one.
