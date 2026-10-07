@@ -1,0 +1,50 @@
+name: Bug report
+description: Something behaves differently from what it should, or from upstream Nix.
+type: Bug
+projects: ["Novavero-AI/1"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Include the exact error message, if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: The smallest Nix expression, command or workflow that shows it.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What you expected instead. If you checked upstream Nix, say which version and what it does.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The output of `nova-nix --version`, the nova-cache version, or the install-nova-nix ref.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Any further output that helps. It is formatted as code automatically.
+      render: text
